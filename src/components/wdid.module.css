@@ -1,0 +1,51 @@
+.title {
+  text-align: center;
+  background-color: rgb(208, 206, 206);
+}
+
+.title h2 {
+  width: 70%;
+  font-size: 2rem;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.flex {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex div {
+  width: 20%;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.flex div h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.flex div p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .title h2 {
+    font-size: 1.5rem;
+  }
+  .flex {
+    padding-bottom: 1rem;
+    width: 90%;
+  }
+
+  .flex div {
+    width: 100%;
+    margin: 1rem auto;
+  }
+}

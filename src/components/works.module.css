@@ -1,0 +1,32 @@
+.title {
+  background-color: rgb(197, 194, 194);
+}
+.title h2 {
+  width: 70%;
+  font-size: 2rem;
+  margin: 0 auto;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.grid {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  justify-content: space-between;
+}
+
+.grid > div {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .title h2 {
+    font-size: 1.5rem;
+  }
+  .grid {
+    grid-template-columns: 100%;
+    width: 90%;
+  }
+}
