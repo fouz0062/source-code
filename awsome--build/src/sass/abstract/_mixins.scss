@@ -1,0 +1,19 @@
+@use './function' as func;
+@mixin btn($color,$color1,$color2) {
+    padding: 0.5rem 1.5rem;
+    margin: 1rem;
+    border: none;
+    outline: none;
+    color: func.theme-color($color);
+    background-color:func.theme-color($color1); 
+    border: 1px solid func.theme-color($color2);
+    cursor: pointer;
+}
+
+@mixin responsive($breakpoint) {
+    @if $breakpoint ==xs {
+        @media only screen and (max-width:900px) {
+            @content
+        }
+    }
+}

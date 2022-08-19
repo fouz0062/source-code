@@ -1,0 +1,196 @@
+@use '../base/container';
+@use "../abstract/function" as func;
+@use '../abstract/mixins';
+
+.blog {
+  text-align: center;
+  margin-top: 6rem;
+
+  &--title {
+    width: 45%;
+    margin: 0 auto;
+    font-size: 6rem;
+    text-transform: uppercase;
+    border: 3px dashed func.theme-color("dark");
+    @include mixins.responsive(xs) {
+      width: 90%;
+      font-size: 3rem;
+    }
+  }
+
+  &--para {
+    width: 80%;
+    color: func.theme-color("grey");
+    font-size: 1.5rem;
+    margin: 2rem auto;
+    @include mixins.responsive(xs) {
+      width: 100%;
+    }
+  }
+
+  &--grid {
+    margin: 6rem auto;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+    @include mixins.responsive(xs) {
+      grid-template-columns: 100%;
+    }
+    & > div {
+      background-color: func.theme-color("light-grey");
+    }
+
+    &--grid1 > div:first-child {
+      display: grid;
+      grid-template-columns: 40% 60%;
+      background-color: func.theme-color('light');
+      @include mixins.responsive(xs) {
+        grid-template-columns: 100%;
+      }
+    }
+    &--grid1 > div:last-child {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      @include mixins.responsive(xs) {
+          grid-template-columns: 100%;
+        }
+    }
+  }
+   &--view--btn {
+       @include mixins.btn('primary', 'light', 'primary');
+       display: block;
+      margin: 0 auto;
+       margin-bottom: 3rem;
+       padding: 0.5rem 2rem;
+       font-size: 1.2rem;
+
+        &:hover {
+            transition: 1s;
+            background-color: func.theme-color('primary');
+            color: func.theme-color('light');
+            border: 1px solid func.theme-color('light');
+          }
+
+   }
+}
+
+.para1{
+    padding: 1rem 0 1rem 1rem;
+    position: relative;
+    @include mixins.responsive(xs) {
+        grid-template-columns: 100%;
+        background-color: func.theme-color('light-grey');
+      }
+    & h4 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 1rem 0;
+        text-transform: capitalize;
+    }
+    &--absolute {
+        border-right: 30px solid func.theme-color('light');
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        position: absolute;
+        left: 30.4%;
+        margin-top: 30px;
+
+        @include mixins.responsive(xs) {
+            display: none;
+          }
+    }
+
+    & button {
+        @include mixins.btn('primary','light','primary');
+        display: block;
+        margin-left: 0;
+
+        &:hover {
+            transition: 1s;
+            background-color: func.theme-color('primary');
+            color: func.theme-color('light');
+            border: 1px solid func.theme-color('light');
+          }
+    }
+}
+.para2 {
+    padding: 1rem 0 1rem 1rem;
+    position: relative;
+    @include mixins.responsive(xs) {
+background-color: func.theme-color('light');
+      }
+
+    & h4 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0 0 1rem 0;
+        text-transform: capitalize;
+    }
+
+    &--absolute {
+        border-left: 30px solid func.theme-color('light-grey');
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        position: absolute;
+        left: 43.5%;
+        margin-top: 50px;
+        @include mixins.responsive(xs) {
+            display: none;
+          }
+    }
+
+    & button {
+        @include mixins.btn('primary', 'light', 'primary');
+        display: block;
+        margin-left: 0px;
+
+        &:hover {
+            transition: 1s;
+            background-color: func.theme-color('primary');
+            color: func.theme-color('light');
+            border: 1px solid func.theme-color('light');
+          }
+    }
+}
+
+.para3 {
+    padding: 1rem 0 1rem 1rem;
+    position: relative;
+
+    & h4 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 0 0 1rem 0;
+        text-transform: capitalize;
+    }
+
+    &--absolute {
+        border-bottom: 30px solid func.theme-color('light-grey');
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        position: absolute;
+        margin-top: -2.4%;
+        left: 69%;
+
+        @include mixins.responsive(xs) {
+            display: none;
+          }
+        
+    }
+
+    & button {
+        @include mixins.btn('primary', 'light', 'primary');
+        display: block;
+        margin-left: 0px;
+
+        &:hover {
+            transition: 1s;
+            background-color: func.theme-color('primary');
+            color: func.theme-color('light');
+            border: 1px solid func.theme-color('light');
+          }
+    }
+
+   
+}

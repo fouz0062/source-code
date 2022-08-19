@@ -1,0 +1,120 @@
+@use "../abstract/function" as func;
+@use '../base/container';
+
+@use '../abstract/mixins';
+
+.client {
+  text-align: center;
+  padding-top: 6rem;
+  background-size: cover;
+  &--title {
+    width: 45%;
+    margin: 0 auto;
+    font-size: 6rem;
+    text-transform: uppercase;
+    border: 3px dashed func.theme-color("light");
+    color: func.theme-color("light");
+
+    @include mixins.responsive(xs) {
+        width: 80%;
+        font-size: 3rem;
+      }
+  }
+
+  &--para {
+    width: 80%;
+    color: func.theme-color("grey");
+    font-size: 1.5rem;
+    padding: 2rem 0;
+    margin: 0 auto;
+    @include mixins.responsive(xs) {
+        width: 95%;
+      }
+  }
+
+  &--carousel {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 3rem;
+    text-align: center;
+    color: func.theme-color("light");
+    font-size: 4rem;
+    justify-content: space-between;
+
+    @include mixins.responsive(xs) {
+      font-size: 2rem;
+      justify-content: center;
+      padding-bottom: 4rem !important;
+      }
+
+    &--main {
+      font-size: 1rem;
+      //margin: 0 20rem;
+      margin-top: 1rem;
+        text-align: center;
+        margin-bottom: 3rem;
+        
+
+      & >div img {
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+
+        @include mixins.responsive(xs) {
+margin-bottom: 0;
+      }
+      }
+
+      & p {
+        margin: 1rem 0;
+      }
+
+      & h4 {
+        font-size: 2rem;
+      }
+    }
+
+    &--button {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: row;
+
+      & > div {
+        width: 10px;
+        height: 10px;
+        background-color: func.theme-color("light");
+        margin: 1rem;
+      }
+    }
+  }
+
+  &--background--color {
+    background-color: func.theme-color('primary');
+    color: func.theme-color('light');
+
+    
+  }
+  &--flex1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 3rem;
+    font-weight: bold;
+    font-style: italic;
+    padding: 3rem 0;
+    @include mixins.responsive(xs) {
+      justify-content: center;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    &>div {
+      @include mixins.responsive(xs) {
+        width: 100%;
+        margin: 1rem auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@use "../base/container";
+@use "../abstract/function" as func;
+@use "../abstract/mixins";
+
+.contact {
+  text-align: center;
+  margin-top: 6rem;
+
+  &--title {
+    width: 45%;
+    margin: 0 auto;
+    font-size: 6rem;
+    text-transform: uppercase;
+    border: 3px dashed func.theme-color("dark");
+
+    @include mixins.responsive(xs) {
+        width: 80%;
+        font-size: 3rem;
+      }
+  }
+
+  &--para {
+    width: 80%;
+    color: func.theme-color("grey");
+    font-size: 1.5rem;
+    margin: 2rem auto;
+    @include mixins.responsive(xs) {
+        width: 100%;
+      }
+  }
+
+  &--form {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    justify-content: space-between;
+    margin-top: 4rem;
+    @include mixins.responsive(xs) {
+        grid-template-columns: 100%;
+        margin-left: 4rem auto;
+        justify-content: center;
+      }
+
+    & > div input {
+      width: 100%;
+      padding: 1rem;
+      margin: 1rem 0;
+      background-color: func.theme-color("light-grey");
+      border: none;
+      outline: none;
+
+      &::placeholder {
+        font-size: 1.1rem;
+        text-transform: capitalize;
+      }
+    }
+  }
+  &--textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: func.theme-color("light-grey");
+    border: none;
+    outline: none;
+    height: 200px;
+    resize: none;
+    &::placeholder {
+      font-size: 1.1rem;
+      text-transform: capitalize;
+    }
+  }
+
+  &--button{
+    @include mixins.btn('primary','light','primary');
+    width: 100%;
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+    @include mixins.responsive(xs) {
+        margin: 0 auto 4rem auto;
+      }
+
+    &:hover {
+        transition: 1s;
+        background-color: func.theme-color('primary');
+        color: func.theme-color('light');
+        border: 1px solid func.theme-color('light');
+    }
+  }
+}

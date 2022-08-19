@@ -1,0 +1,124 @@
+@use "../abstract/function" as func;
+@use '../abstract/mixins' ;
+
+.background {
+  
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  height: 92vh;
+
+  @include mixins.responsive(xs) {
+      height: 50vh;
+    }
+    
+
+  &--title {
+    color: func.theme-color("primary");
+    width: 80%;
+    padding: 2rem;
+    font-size: 2rem;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    
+  }
+}
+
+.skilled {
+  width: 50%;
+  margin: 1rem auto;
+  text-align: center;
+  border: 3px dashed func.theme-color("light");
+  padding: 2rem 0;
+  @include mixins.responsive(xs) {
+     width: 95%;
+     padding: 2rem 0 0 0;
+    }
+
+  &--title {
+    color: func.theme-color("light");
+    text-transform: uppercase;
+    font-size: 6rem;
+    position: relative;
+    @include mixins.responsive(xs) {
+        font-size: 3rem;
+      }
+  }
+
+  &--para {
+    position: absolute;
+    background-color: func.theme-color("light");
+    padding: 1rem 2rem;
+    color: func.theme-color("primary");
+    font-weight: bold;
+    font-size: 1.2rem;
+    left: 40.2%;
+
+    @include mixins.responsive(xs) {
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 0;
+        left: 0;
+        position: relative;
+      }
+  }
+}
+
+.flex {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 0;
+  @include mixins.responsive(xs) {
+     width: 95%;
+     justify-content: center;
+    }
+
+  &--left {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: func.theme-color("primary");
+  }
+  &--right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-top: 5px;
+    @include mixins.responsive(xs) {
+        justify-content: center;
+      }
+
+      &>div {
+        @include mixins.responsive(xs) {
+            width: 50%;
+            text-align: center;
+            margin: 0.5rem auto;
+          }
+      }
+  }
+
+  &--right > div > a {
+    padding-left: 1.5rem;
+    color: func.theme-color("dark");
+
+    &:hover {
+      color: func.theme-color("primary");
+      transition: 2s;
+      text-shadow: 2px 2px 3px func.theme-color("dark");
+      font-weight: bold;
+    }
+  }
+
+  &--right > div .active {
+    color: func.theme-color("primary");
+    transition: 2s;
+    text-shadow: 2px 2px 3px func.theme-color("dark");
+    font-weight: bold;
+  }
+}

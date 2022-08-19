@@ -1,0 +1,122 @@
+@use "../base/container";
+@use "../abstract/function" as func;
+@use  '../abstract/mixins';
+
+.choose--background {
+  background-color: func.theme-color("light-grey");
+
+}
+
+.choose--title {
+  width: 35%;
+  margin: 0 auto;
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0;
+  border-top: 8px solid func.theme-color("primary");
+  border-bottom: 8px solid func.theme-color("primary");
+  text-transform: uppercase;
+
+  @include mixins.responsive(xs) {
+      width: 100%;
+    }
+}
+
+.choose--flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 6rem 0;
+  @include mixins.responsive(xs) {
+      justify-content: center;
+    }
+  
+
+  & > div {
+    background-color: func.theme-color("light");
+    padding: 2rem 1rem;
+    text-align: center;
+    width: 23%;
+    margin: 3rem 0 4rem 0;
+
+    @include mixins.responsive(xs) {
+        width: 95%;
+        margin: 1rem 0;
+      }
+
+    & > h2 {
+      border-top: 4px solid func.theme-color("primary");
+      width: 70%;
+      text-transform: uppercase;
+      margin: 1rem auto;
+    }
+  }
+
+  &>div:last-child{
+    @include mixins.responsive(xs) {
+        margin-bottom: 4rem;
+      }
+  }
+
+  
+
+  &--relative {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    text-align: center;
+    color: func.theme-color('light');
+    font-weight: bold;
+    font-size: 0.8rem;
+
+    &>p:nth-child(2) {
+        font-size: 2rem;
+        color: func.theme-color('dark');
+    }
+
+        @include mixins.responsive(xs) {
+          color: func.theme-color('dark');
+        }
+  }
+  &--absolute {
+    border-bottom: 130px solid func.theme-color('primary');
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    z-index: -1;
+    position: absolute;
+    margin-top: -7.5rem;
+left: 20%;
+
+    @include mixins.responsive(xs) {
+        display: none;
+      }
+  }
+
+  &--details{
+    color: func.theme-color('grey');
+    & p {
+        margin: 0.5rem 0;
+    }
+    & span {
+        color: func.theme-color('primary');
+        padding: 0 0.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+  }
+
+  &>div a button {
+    @include mixins.btn('light','primary','primary');
+    margin: 2rem 0;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:hover {
+        transition: 1s;
+        background-color: func.theme-color('light');
+        color: func.theme-color('primary');
+        border: 1px solid func.theme-color('grey');
+      }
+  }
+}

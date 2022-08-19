@@ -1,0 +1,67 @@
+@use "../base/container";
+@use "../abstract/function" as func;
+@use '../abstract/mixins' as mix;
+
+.core--background {
+    background-size: cover;
+    background-position: bottom;
+}
+
+.core--title {
+    width: 32%;
+    margin: 0 auto;
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0;
+    border-top: 8px solid func.theme-color("light");
+    border-bottom: 8px solid func.theme-color("light");
+    text-transform: uppercase;
+    color: func.theme-color('light');
+
+    @include mix.responsive(xs) {
+            width: 100%;
+        }
+}
+
+.core--grid{
+    display: grid;
+    grid-template-columns: 55% 40%;
+    justify-content: space-between;
+    margin: 6rem auto;
+
+    @include mix.responsive(xs) {
+            grid-template-columns: 100%;
+        }
+
+    & >div>div {
+        color: func.theme-color('light');
+        display: grid;
+        grid-template-columns: 20% 80%;
+        margin: 1.5rem;
+        //align-items: center;
+
+        @include mix.responsive(xs) {
+                margin: 1.5rem auto;
+            }
+
+        &>div:first-child {
+            font-size: 3rem;
+        }
+
+        &>div:last-child h4 {
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        &>div:last-child p {
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            color: func.theme-color('grey');
+
+            @include mix.responsive(xs) {
+                    color: func.theme-color('light-grey');
+                }
+        }
+    }
+}

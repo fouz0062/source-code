@@ -1,0 +1,83 @@
+@use "../abstract/function" as func;
+@use "../abstract/mixins";
+@use '../base/container';
+
+.port {
+  text-align: center;
+  margin-top: 6rem;
+
+  &--title {
+    width: 45%;
+    margin: 0 auto;
+    font-size: 6rem;
+    text-transform: uppercase;
+    border: 3px dashed func.theme-color("dark");
+
+    @include mixins.responsive(xs) {
+        width: 80%;
+        font-size: 3rem;
+      }
+  }
+
+  &--para {
+    width: 80%;
+    color: func.theme-color("grey");
+    font-size: 1.5rem;
+    margin: 2rem auto;
+
+    @include mixins.responsive(xs) {
+        width: 100%;
+      }
+  }
+  &--flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 4rem auto;
+    justify-content: space-between;
+
+    @include mixins.responsive(xs) {
+        justify-content: center;
+      }
+  }
+  &--btn {
+    @include mixins.btn("grey", "light", "grey");
+
+    &:hover {
+        transition: 1s;
+        background-color: func.theme-color('primary');
+        color: func.theme-color('light');
+        border: 1px solid func.theme-color('light');
+      }
+    &--active {
+      @include mixins.btn("light", "primary", "primary");
+
+      &:hover {
+          transition: 1s;
+          background-color: func.theme-color('light');
+          color: func.theme-color('grey');
+          border: 1px solid func.theme-color('grey');
+        }
+    }
+  }
+
+  &--grid{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 45% 45%;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 6rem 0.5rem;
+
+    @include mixins.responsive(xs) {
+        grid-template-columns: 100%;
+        grid-template-rows: 12.5%;
+      }
+
+      & img {
+        @include mixins.responsive(xs) {
+            margin: 1rem auto;
+          }
+      }
+  }
+}

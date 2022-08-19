@@ -1,0 +1,110 @@
+@use "../base/container";
+@use "../abstract/function" as func;
+@use "../abstract/mixins" as mix;
+
+.topskill--background {
+  background-color: func.theme-color("light-grey");
+}
+
+.topskill--title {
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0;
+  border-top: 8px solid func.theme-color("primary");
+  border-bottom: 8px solid func.theme-color("primary");
+  text-transform: uppercase;
+
+  @include mix.responsive(xs) {
+    width: 80%;
+  }
+}
+
+.topskill--flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 6rem 0;
+  @include mix.responsive(xs) {
+    justify-content: center;
+  }
+
+  & > div {
+    width: 19%;
+
+    @include mix.responsive(xs) {
+      width: 100%;
+    }
+  }
+}
+
+.topskill {
+  width: 160px;
+  height: 160px;
+  position: relative;
+@include mix.responsive(xs) {
+        margin: 1rem auto;
+    }
+
+  &--outer {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+      -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  }
+
+  &--inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+      inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+      -0.15px -0.15px 0px rgba(255, 255, 255, 1),
+      0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+      0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    & > div {
+      color: func.theme-color("primary");
+      font-weight: bold;
+      font-size: 2rem;
+      & > div {
+        color: func.theme-color("dark");
+        font-size: 1rem;
+      }
+    }
+  }
+}
+circle {
+  fill: none;
+  stroke-width: 1.2rem;
+  stroke-dasharray: 472;
+}
+.photoshop {
+  stroke: func.theme-color("red");
+  stroke-dashoffset: 113.28;
+}
+.joomla {
+  stroke: func.theme-color("yellow");
+  stroke-dashoffset: 55.6;
+}
+.wordpress {
+  stroke: func.theme-color("secondary");
+  stroke-dashoffset: 70.8;
+}
+.branding {
+  stroke: func.theme-color("green");
+  stroke-dashoffset: 146.32;
+}
+.svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

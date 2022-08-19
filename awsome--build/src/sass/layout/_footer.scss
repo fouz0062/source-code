@@ -1,0 +1,42 @@
+@use '../base/container';
+@use '../abstract/function' as func;
+
+.footer--bg{
+  background-color: func.theme-color('dark');
+
+  &--flex{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+
+   &>div {
+    color: func.theme-color('light');
+    background-color: func.theme-color('grey');
+    font-size: 2rem;
+    margin: 3rem 1rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+
+    &:hover {
+        transition: 2s;
+        background-color: func.theme-color('light');
+        color: func.theme-color('primary');
+        transform: rotate(360deg);
+    }
+   }
+  }
+}
+
+.footer2 {
+    color: func.theme-color('grey');
+    margin: 1.5rem auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    & span {
+        font-weight: 300;
+        font-size: 1.2rem;
+    }
+}

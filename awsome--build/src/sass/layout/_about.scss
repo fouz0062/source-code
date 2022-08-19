@@ -1,0 +1,102 @@
+@use "../base/container";
+@use "../abstract/function" as func;
+
+@use '../abstract/mixins' as mix;
+
+.about {
+  text-align: center;
+  margin-top: 6rem;
+
+  &--title {
+    width: 45%;
+    margin: 0 auto;
+    font-size: 6rem;
+    text-transform: uppercase;
+    border: 3px dashed func.theme-color("dark");
+
+    @include mix.responsive(xs) {
+        width: 100%;
+        font-size: 3rem;
+      }
+  }
+  &--para {
+    width: 80%;
+    color: func.theme-color("grey");
+    font-size: 1.5rem;
+    margin: 2rem auto;
+
+    @include mix.responsive(xs) {
+        width: 100%;
+      }
+  }
+  &--grid {
+    display: grid;
+    grid-template-columns: 33% 65%;
+    justify-content: space-between;
+    margin-top: 6rem;
+
+    @include mix.responsive(xs) {
+        grid-template-columns: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+
+    &--right {
+      & h4 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+
+      & p {
+        font-size: 1.2rem;
+        color: func.theme-color("grey");
+        line-height: 2;
+      }
+      & p span {
+        font-weight: bold;
+        color: func.theme-color("dark");
+      }
+    }
+  }
+  &--grid2 {
+    display: grid;
+    grid-template-columns: 65% 33%;
+    justify-content: space-between;
+    margin-top:4rem;
+    margin-bottom: 6rem;
+
+    @include mix.responsive(xs) {
+        grid-template-columns: 100%;
+        justify-content: center;
+        text-align: center;
+      }
+
+    &--left {
+      & h4 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+
+      & p {
+        font-size: 1.2rem;
+        color: func.theme-color("grey");
+        line-height: 2;
+      }
+
+      & p span {
+        font-weight: bold;
+        color: func.theme-color("dark");
+      }
+    }
+
+    &--right iframe {
+      height: 267.58px;
+      width: 401.06px;
+
+      @include mix.responsive(xs) {
+         width: 95%;
+
+        }
+    }
+  }
+}
