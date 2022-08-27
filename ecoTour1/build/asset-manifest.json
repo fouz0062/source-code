@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f5dded93.css",
+    "main.js": "/static/js/main.b29bd410.js",
+    "static/js/787.2cb9fe22.chunk.js": "/static/js/787.2cb9fe22.chunk.js",
+    "static/media/car-3.jpg": "/static/media/car-3.ba76df606a0a20e0f1c0.jpg",
+    "static/media/home-background.jpg": "/static/media/home-background.cd2b6c87f4d569847b2a.jpg",
+    "static/media/maldives.jpg": "/static/media/maldives.6491001fa41a61af63fe.jpg",
+    "static/media/pvt-bg2.jpg": "/static/media/pvt-bg2.92db9ea56069b64a656d.jpg",
+    "static/media/home-background3.jpg": "/static/media/home-background3.3b12f50a38c76fdcc5ea.jpg",
+    "static/media/pvt-bg1.jpg": "/static/media/pvt-bg1.787bbfec52b8b0f84521.jpg",
+    "static/media/home-background4.jpg": "/static/media/home-background4.2d0b56f071312a79becd.jpg",
+    "static/media/single-bg1.jpg": "/static/media/single-bg1.ef63f437d13c263f36cc.jpg",
+    "static/media/car-2.jpg": "/static/media/car-2.60e77a188ebc5b38e1cc.jpg",
+    "static/media/dest-sky-bg.jpg": "/static/media/dest-sky-bg.b4d51f2d61e69a29df2b.jpg",
+    "static/media/dest-bg1.jpg": "/static/media/dest-bg1.9a2306a90d8c3c056272.jpg",
+    "static/media/car-1.jpg": "/static/media/car-1.476dcd001cad9292104f.jpg",
+    "static/media/boat-bg2.jpg": "/static/media/boat-bg2.c2a5b8aae0f8b2d5dc9a.jpg",
+    "static/media/home-background2.png": "/static/media/home-background2.c50d2b27bc0c7bdecc2f.png",
+    "index.html": "/index.html",
+    "main.f5dded93.css.map": "/static/css/main.f5dded93.css.map",
+    "main.b29bd410.js.map": "/static/js/main.b29bd410.js.map",
+    "787.2cb9fe22.chunk.js.map": "/static/js/787.2cb9fe22.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5dded93.css",
+    "static/js/main.b29bd410.js"
+  ]
+}
