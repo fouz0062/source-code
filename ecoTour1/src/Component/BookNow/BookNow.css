@@ -1,0 +1,46 @@
+.calendar {
+  background-color: rgb(124, 193, 22);
+  color: #fff;
+}
+.calendar--flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 4rem 0;
+  align-items: center;
+}
+.calendar--flex > div {
+  width: 50%;
+}
+.calendar--flex > div:first-child {
+  font-size: 4rem;
+}
+.calendar--flex > div:first-child > span {
+  padding: 2rem;
+  font-size: 2rem;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.calendar--flex > div:first-child > span > p {
+  color: green;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  text-transform: lowercase;
+  /* margin-left: 42%; */
+}
+.calendar--flex > div:last-child > button {
+  background-color: #fff;
+  color: green;
+  border: none;
+  outline: none;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .calendar--flex > div {
+    width: 100%;
+  }
+}

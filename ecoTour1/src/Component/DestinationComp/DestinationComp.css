@@ -1,0 +1,163 @@
+.bg1 {
+  background-image: url(../../../public/image/dest-bg1.jpg);
+}
+.bg2 {
+  background-image: url(../../../public/image/boat-bg2.jpg);
+}
+.bg1,
+.bg2 {
+  height: 80vh;
+  background-size: cover;
+  background-position: left top;
+}
+.bg1 > div {
+  color: #fff;
+  font-size: 2rem;
+  padding: 20rem 0;
+  text-transform: uppercase;
+  text-align: left;
+}
+.bg1 > div > h2 {
+  font-weight: 400;
+  padding: 1rem 0;
+}
+.bg1 > div > h2:last-child {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.carribean h2 {
+  padding: 4rem 0 2rem 0;
+  color: #5b1717;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+.carribean > p {
+  color: gray;
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+.cr-grid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: space-between;
+  padding: 4rem 0;
+}
+.geo,
+.history {
+  display: grid;
+  grid-template-columns: 55% 40%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  padding-bottom: 4rem;
+}
+.geo h2,
+.history h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+}
+.geo p,
+.history p {
+  color: grey;
+  padding: 1rem 0;
+}
+
+.bg2 > div {
+  color: #fff;
+  font-size: 2rem;
+  padding: 18% 0;
+  text-shadow: 2px 2px 5px grey;
+  text-transform: capitalize;
+}
+.history {
+  padding: 4rem 0;
+}
+.background3 {
+  position: relative;
+  height: 95vh;
+  background-size: cover;
+  z-index: -2;
+}
+.home3-img {
+  position: absolute;
+  height: 500px;
+  z-index: -1;
+  top: 12%;
+  right: 7%;
+}
+.home3-content {
+  position: absolute;
+  background-color: #fff;
+  text-align: left;
+  width: 40%;
+  padding: 2rem 1rem;
+  top: 25%;
+}
+
+.home3-content > p {
+  font-size: 2rem;
+  color: green;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+}
+
+.home3-content > div > p:first-child {
+  padding: 1rem 0;
+  color: rgb(91, 23, 23);
+}
+.home3-content > div > p:last-child {
+  color: rgb(150, 150, 150);
+  font-size: 0.9rem;
+  padding-bottom: 2rem;
+}
+.home3-content > div > button {
+  cursor: pointer;
+  color: #fff;
+  background-color: green;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  position: absolute;
+  right: 0;
+  font-size: 1.1rem;
+  bottom: 0;
+  text-transform: uppercase;
+}
+.bg3 {
+  background-image: url(../../../public/image/dest-sky-bg.jpg);
+}
+
+@media screen and (max-width: 600px) {
+  .bg1,
+  .bg2 {
+    height: auto;
+    width: 100%;
+  }
+  .bg1 > div {
+    font-size: 1.5rem;
+    padding: 10rem 0 0 1rem;
+  }
+  .bg1 > div > h2:last-child {
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    padding-bottom: 2rem;
+  }
+  .bg1 > div > h2:first-child {
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+  }
+  .carribean h2,
+  .bg2 div {
+    font-size: 1.5rem;
+  }
+  .carribean > p {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+  }
+  .geo,
+  .cr-grid,
+  .history {
+    grid-template-columns: 100%;
+  }
+}

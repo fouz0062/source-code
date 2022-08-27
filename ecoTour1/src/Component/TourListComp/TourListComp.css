@@ -1,0 +1,268 @@
+.tourlist-bg {
+  background-image: url("../../../public/image/maldives.jpg");
+  background-size: cover;
+  height: 80vh;
+}
+.tourlist-bg > div {
+  color: #fff;
+  text-align: left;
+  padding: 15rem 0;
+  text-transform: uppercase;
+}
+.tourlist-bg > div p {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.tourlist-bg > div h4 {
+  font-size: 3rem;
+}
+.tourlist-bg > div button {
+  color: #fff;
+  background-color: green;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+.ourTours {
+  padding: 4rem 0;
+}
+
+.ourTours h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.ourTours p {
+  color: grey;
+  padding: 1rem 0;
+}
+
+.categories {
+  background-color: lightgrey;
+  padding: 4rem 0;
+}
+.categories > div {
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  text-transform: uppercase;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.categories > div > div {
+  background-color: #fff;
+  padding: 4rem 1rem;
+}
+.tlist {
+  background-color: lightgray;
+  padding: 2rem 0;
+}
+.tlist > div > div {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+/* .tlist > div > div:first-child img {
+  height: 500px;
+} */
+.tlist > div > div {
+  margin: 0.5rem auto;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px black;
+}
+.tlist > div > div > div:first-child img {
+  height: 100%;
+}
+.tlist > div > div > div:last-child {
+  padding: 2.5rem 1rem 0 1rem;
+  text-align: left;
+}
+
+.tlist > div > div > div:last-child > div:first-child {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.tlist > div > div > div:last-child > div:first-child h3 {
+  text-transform: uppercase;
+}
+.tlist > div > div > div:last-child > div:first-child p {
+  color: gray;
+  padding: 0.2rem 0;
+  text-transform: uppercase;
+}
+.tlist > div > div > div:last-child > div:first-child p > span {
+  padding-left: 5px;
+}
+
+.tlist-price {
+  text-align: right;
+}
+.tlist-price button {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: green;
+  padding: 0.5rem;
+}
+.tlist-price div {
+  color: black;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+.tlist-right > div:nth-child(2) {
+  color: grey;
+}
+.tlist-right > div:nth-child(2) p > span {
+  color: black;
+  font-weight: bold;
+}
+.tlist-right > div:nth-child(2) > p {
+  border-left: 2px solid black;
+  padding: 1rem 0 0 1rem;
+}
+.tlist-right > div:nth-child(2) > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 2.5rem;
+  color: green;
+  align-content: center;
+  align-items: center;
+}
+.tlist-right > div:nth-child(2) > div > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.tlist-right > div:nth-child(2) > div > div span {
+  font-size: 1rem;
+  color: gray;
+  padding-left: 2px;
+  padding-right: 1rem;
+}
+
+.tlist > div > button,
+.tlist-btn {
+  background-color: green;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 2rem 0 4rem 0;
+}
+
+.tlist-featured {
+  padding: 4rem 0;
+}
+
+.tlist-featured h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.tlist-featured > div {
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.tour-bg1,
+.tour-bg2,
+.tour-bg3 {
+  background-image: url("../../../public/image/car-1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+}
+.tour-bg2 {
+  background-image: url("../../../public/image/car-2.jpg");
+}
+.tour-bg3 {
+  background-image: url("../../../public/image/car-3.jpg");
+}
+
+.tour-bg1 > div,
+.tour-bg2 > div,
+.tour-bg3 > div {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  padding: 10rem 1rem;
+  text-align: left;
+}
+
+.tour-bg1 p,
+.tour-bg2 p,
+.tour-bg3 p {
+  padding: 0.5rem 0;
+}
+
+.tour-bg1 button,
+.tour-bg2 button,
+.tour-bg3 button {
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.tour-bg1 span {
+  padding: 0 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .tourlist-bg {
+    height: auto;
+    width: 100%;
+    padding: 8rem 0 2rem 0;
+  }
+  .tourlist-bg > div {
+    padding: 0;
+  }
+  .tourlist-bg > div p {
+    font-size: 1rem;
+  }
+  .tourlist-bg > div h4 {
+    font-size: 2rem;
+  }
+  .ourTours p {
+    font-size: 0.9rem;
+  }
+  .categories > div,
+  .tlist > div > div,
+  .tlist-featured > div {
+    grid-template-columns: 100%;
+  }
+  .categories > div > div {
+    margin: 0.5rem 0;
+  }
+  .tlist-right > div:nth-child(2) > p {
+    margin-bottom: 1.5rem;
+  }
+  .tlist > div > div,
+  .tlist-featured > div > div {
+    margin: 1rem 0;
+  }
+  .tlist-featured h2 {
+    font-size: 1.5rem;
+  }
+  .tlist-featured {
+    padding: 2rem 0;
+  }
+  .tlist > div > button,
+  .tlist-btn {
+    margin: 2rem auto;
+  }
+}

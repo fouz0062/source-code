@@ -1,0 +1,68 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin: 2rem auto !important;
+  align-content: center;
+}
+
+.Title {
+  color: rgb(91, 23, 23);
+  font-size: 2rem;
+}
+
+.Title span {
+  color: green;
+}
+
+.Title span:nth-child(1) {
+  padding: 0 5px 0 0;
+  font-size: 2.2rem;
+}
+.Title span:nth-child(3) {
+  font-size: 2rem;
+}
+
+.Title .strong {
+  font-weight: bold;
+  color: rgb(91, 23, 23);
+}
+
+.TitleContact {
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid green;
+  text-transform: uppercase;
+  color: rgb(91, 23, 23);
+  cursor: pointer;
+}
+.TitleContact span {
+  padding: 0 5px 0 0;
+}
+.icons {
+  font-size: 2rem;
+  color: rgb(91, 23, 23);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .flex {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 0.5rem auto !important;
+    font-size: 1rem;
+  }
+  .flex div {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  .Title span:nth-child(1),
+  .Title span:nth-child(3) {
+    font-size: 1.5rem;
+  }
+  .TitleContact {
+    font-size: 0.9rem !important;
+    padding: 0.5rem;
+  }
+}

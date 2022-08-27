@@ -1,0 +1,200 @@
+.single-bg {
+  height: 80vh;
+  background-size: cover;
+  background-position: left center;
+  background-image: url(../../../public/image/single-bg1.jpg);
+}
+.single-bg div {
+  color: #fff;
+  padding: 12rem 0;
+  text-transform: uppercase;
+}
+
+.single-bg div p {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.single-bg div h2 {
+  font-size: 3rem;
+}
+
+.single-bg div button {
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+
+.single-map {
+  padding: 4rem 0;
+  text-align: left;
+}
+.single-map > h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+.single--title {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  border-bottom: 4px solid green;
+}
+.single--title > div {
+  padding: 0.5rem 0;
+}
+
+.single--title > div:first-child {
+  border-bottom: 5px solid rgb(5, 200, 5);
+}
+
+.single-map-description {
+  display: grid;
+  grid-template-columns: 30% 68%;
+  margin: 2rem 0;
+  justify-content: space-between;
+}
+.single-map-description > div:first-child {
+  background-color: rgb(228, 224, 224);
+  text-transform: capitalize;
+  padding: 2rem 1rem;
+}
+.single-map-description > div:first-child h4 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.single-map-description > div:first-child h4 > span {
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.single-map-description > div:first-child > div > p {
+  padding: 1rem 0;
+  border-bottom: 1px solid black;
+  color: #5b1717;
+  font-size: 1.2rem;
+}
+.single-map-description > div:first-child > div > p span {
+  color: black;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.highlights-price {
+  background-color: aliceblue;
+  border: none;
+  margin: 1.5rem 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+.highlights-price button {
+  background-color: green;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+}
+.highlights-price span {
+  font-weight: bold;
+  padding-left: 5px;
+}
+.highlights-price p {
+  color: black !important;
+  font-size: 0.8rem !important;
+  border: none !important;
+}
+.slider {
+  overflow: hidden;
+  padding: 0 0 4rem 0;
+}
+.slider figure {
+  position: relative;
+  width: 500%;
+
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+  transition: 2s;
+}
+.slider figure img {
+  width: 20%;
+  height: 100vh;
+  float: left;
+}
+
+@keyframes slider {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+
+  100% {
+    left: -400%;
+  }
+}
+
+.bn-btn {
+  background-color: green;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .single-bg {
+    height: auto;
+    width: 100%;
+  }
+
+  .single-bg > div {
+    padding: 8rem 0 2rem 0;
+  }
+  .single-bg div p,
+  .single-map > h2 {
+    font-size: 1.5rem;
+  }
+  .single-bg div h2 {
+    font-size: 2rem;
+  }
+  .single-map-description {
+    grid-template-columns: 100%;
+  }
+  .single-map-description > div:first-child {
+    margin-bottom: 1rem;
+  }
+  .slider figure img {
+    height: 50vh;
+  }
+}

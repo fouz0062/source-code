@@ -1,0 +1,288 @@
+.pvt-bg1 {
+  height: 60vh;
+  background-size: cover;
+  background-image: url(../../../public/image/pvt-bg1.jpg);
+}
+.pvt-bg1 > div > h2 {
+  color: #fff;
+  font-size: 3rem;
+  text-align: left;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding: 10rem 0;
+}
+.pvt-bg1 > div > h2 > p {
+  padding: 1rem 0;
+}
+
+.pvt-content1 {
+  padding: 4rem 0;
+}
+
+.pvt-content1 > h2 {
+  color: green;
+  text-transform: uppercase;
+}
+.pvt-content1 > p {
+  color: gray;
+  padding: 1rem 0 2rem 0;
+}
+
+.pvt-content1 > div {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  justify-content: space-between;
+  text-align: left;
+  color: #fff;
+}
+.pvt-content1 > div > div:first-child {
+  background-color: rgb(50, 175, 50);
+  padding: 2rem 1rem;
+}
+.pvt-content1 > div > div:last-child {
+  background-color: darkgreen;
+  padding: 2rem 1rem;
+}
+
+.pvt-content1 > div > div > h2 {
+  padding: 0 0 1rem 0;
+  text-transform: uppercase;
+}
+.pvt-content1 > div > div > p {
+  font-size: 0.8rem;
+  padding-bottom: 0.5rem;
+}
+.pvt-bg2 {
+  height: 90vh;
+  background-size: cover;
+  color: #fff;
+  background-image: url(../../../public/image/pvt-bg2.jpg);
+}
+.pvt-bg2 > div {
+  padding: 4rem 0;
+}
+.pvt-bg2 > div > h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+.pvt-bg2 > div > div {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 6rem 0;
+  margin: 4rem 0;
+  position: relative;
+  justify-content: space-between;
+  font-size: 5rem;
+}
+.pvt-bg2 > div > div p {
+  font-size: 0.8rem;
+  padding: 1rem 0;
+}
+.pvt-bg2 button {
+  background-color: rgb(50, 175, 50);
+  position: absolute;
+  color: #fff;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  padding: 0.8rem 1.5rem;
+  bottom: -1rem;
+  left: 46%;
+}
+.pvt-inspired {
+  padding: 6rem 0;
+}
+.pvt-inspired > h2 {
+  font-size: 2rem;
+  color: #5b1717;
+  text-transform: uppercase;
+}
+.pvt-inspired > p {
+  color: grey;
+  padding: 1rem 0;
+}
+.pvt-inspired > div {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  gap: 2px;
+}
+.pvt-inspired > div > div:first-child {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  gap: 2px;
+}
+.pvt-inspired > div > div:last-child {
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
+  gap: 2px;
+}
+.pvt-inspired > div > div:first-child > div,
+.pvt-inspired > div > div:last-child > div {
+  height: 50vh;
+  background-size: cover;
+}
+.pvt-inspired > div > div:first-child > div h2,
+.pvt-inspired > div > div:last-child > div h2 {
+  color: #fff;
+  text-shadow: 2px 2px 5px grey;
+  padding: 8rem 0 0 1rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+.pvt-inspired > div > div:first-child > div p {
+  color: #fff;
+  text-shadow: 2px 2px 5px grey;
+  padding: 1rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+.pvt-grey {
+  background-color: lightgray;
+}
+.pvt-grey > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0;
+}
+.pvt-grey > div > div {
+  width: 49%;
+  text-align: left;
+}
+.pvt-grey > div > div:first-child h2 {
+  font-size: 1.5rem;
+  color: darkgreen;
+  text-transform: uppercase;
+  padding: 0 1rem 1rem 1rem;
+}
+.pvt-grey > div > div:first-child > div {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 46% 46%;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.pvt-grey > div > div:first-child > div img {
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.pvt-grey > div > div:first-child button {
+  background-color: rgb(50, 175, 50);
+  text-transform: uppercase;
+  border: none;
+  padding: none;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  margin: 2rem 0;
+}
+.pvt-grey > div > div:last-child > div:first-child {
+  background-color: #fff;
+  padding: 2rem 1rem;
+  font-size: 3rem;
+  color: darkgreen;
+}
+.pvt-grey > div > div:last-child > div:first-child p {
+  font-size: 1rem;
+  color: grey;
+  padding: 0.5rem;
+}
+.nme {
+  color: darkgreen !important;
+  text-transform: uppercase;
+}
+.pvt-grey > div > div:last-child div:nth-child(2) {
+  font-size: 1.8rem;
+  padding: 0.5rem 0 0 0.5rem;
+  text-align: left;
+  color: gray;
+}
+.pvt-grey > div > div:last-child div:nth-child(2) > span {
+  color: darkgreen;
+  padding: 0 0.2rem;
+}
+.span2 {
+  font-size: 1rem;
+  color: grey !important;
+  display: block;
+}
+.guides-div3 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: left;
+  margin: 3rem 0;
+  text-transform: uppercase;
+}
+.guides-div3 > div:first-child {
+  color: black;
+  text-align: center;
+}
+.guides-div3 > div:last-child {
+  color: black !important;
+}
+.guides-div3 > div:last-child > p {
+  color: darkgreen;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .pvt-bg1,
+  .pvt-bg2 {
+    height: auto;
+    width: 100%;
+  }
+  .pvt-bg1 > div > h2 {
+    padding: 8rem 0 2rem 1rem;
+    font-size: 1.5rem;
+  }
+  .pvt-content1 > h2,
+  .pvt-bg2 > div > h2,
+  .pvt-inspired > h2 {
+    font-size: 1.5rem;
+  }
+  .pvt-content1 > p,
+  .pvt-inspired > p {
+    font-size: 0.9rem;
+  }
+  .pvt-content1 > div,
+  .pvt-bg2 > div > div,
+  .pvt-inspired > div > div:first-child,
+  .pvt-inspired > div > div:last-child,
+  .pvt-grey > div > div:first-child > div,
+  .guides-div3 {
+    grid-template-columns: 100%;
+  }
+  .pvt-content1 > div > div {
+    margin: 0.5rem 0;
+  }
+  .pvt-bg2 button {
+    left: 0;
+    transform: translateX(100%);
+  }
+  .pvt-inspired > div > div > div {
+    margin: 0.5rem 0;
+  }
+  .pvt-grey > div {
+    flex-wrap: wrap;
+
+    justify-content: center;
+  }
+  .pvt-grey > div > div {
+    width: 100%;
+    text-align: center;
+  }
+  .pvt-grey > div > div:first-child > div {
+    display: block;
+  }
+  .pvt-grey > div > div:last-child div:nth-child(2) {
+    text-align: center !important;
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  .pvt-grey > div {
+    padding: 2rem 0;
+  }
+  .guides-div3 > div:last-child > p {
+    font-size: 1rem;
+  }
+}
