@@ -1,0 +1,37 @@
+{
+  "Students": [
+    {
+      "id": "1",
+      "Name": "Fouziya",
+      "DOB": "5-05-1996",
+      "Class": "+2",
+      "JoinedDate": "06/01/2013",
+      "Dob": "2022-08-17"
+    },
+    {
+      "id": "4",
+      "Name": "Fouziya",
+      "Dob": "2022-09-21",
+      "Class": "5th",
+      "JoinedDate": "2022-09-12"
+    }
+  ],
+  "Teachers": [
+    {
+      "id": "1",
+      "Name": "Tutor",
+      "Class": "12",
+      "Subject": "Biology",
+      "JoinedDate": "08-01-2013"
+    }
+  ],
+  "PostShow": [
+    {
+        "id":"1",
+      "title": "Annual Article",
+      "teaser": "bcbsjkbcwqjcsbqwibcwqjbcwj",
+      "body": "cnjksjkdbvhaekshbdzvesjkbzdvkjesdzbxvjkesbzdvjkeasbvdjsbdzjakebn",
+      "published_at": "05-05-1996"
+    }
+  ]
+}
